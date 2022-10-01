@@ -3,7 +3,7 @@ import React from 'react';
 import CardDisplay from './CardDisplay';
 
 const CardsDisplay = props => {
-  const { cards } = props;
+  const { cards, processCardClicked } = props;
   return (
     <Grid
       padding="1vw 5vw"
@@ -17,6 +17,7 @@ const CardsDisplay = props => {
             key={card.name}
             cardName={card.name}
             cardImage={card.image}
+            processCardClicked={processCardClicked}
           />
         );
       })}

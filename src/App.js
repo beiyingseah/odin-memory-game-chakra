@@ -5,15 +5,7 @@ import CardDisplay from './components/CardDisplay';
 import ScoreDisplay from './components/ScoreDisplay';
 
 // Chakra UI components
-import {
-  ChakraProvider,
-  Flex,
-  Heading,
-  Box,
-  Text,
-  Grid,
-  theme,
-} from '@chakra-ui/react';
+import { ChakraProvider, Flex, Heading, Text, theme } from '@chakra-ui/react';
 
 // Images
 import bluebottle from './assets/images/bluebottle.png';
@@ -40,7 +32,7 @@ function App() {
     { name: 'braincoral', image: braincoral },
     { name: 'flameback', image: flameback },
     { name: 'friedegg', image: friedegg },
-    { name: 'giantclam', image: giantclam },
+    { name: 'giaREntclam', image: giantclam },
     { name: 'lopheliacoral', image: lopheliacoral },
     { name: 'moonjelly', image: moonjelly },
     { name: 'pyrosome', image: pyrosome },
@@ -48,6 +40,25 @@ function App() {
     { name: 'seacucumber', image: seacucumber },
     { name: 'seawasp', image: seawasp },
   ]);
+
+  const shuffleCards = () => {
+    setCards(cards.sort(() => Math.random() - 0.5));
+  };
+
+  const processCardClicked = cardName => {
+    if (cardsClicked.includes(cardName)) {
+      if (currentScore > bestScore) {
+        setBestScore(currentScore);
+      }
+      setCurrentScore(0);
+      shuffleCards();
+      setCardsClicked(cardsClicked.concat(cardName));
+    } else {
+      setCardsClicked();
+      setCurrentScore(currentScore + 1);
+      shuffleCards();
+    }
+  };
 
   return (
     <ChakraProvider theme={theme}>
@@ -62,7 +73,7 @@ function App() {
       </Flex>
       <ScoreDisplay currentScore={currentScore} bestScore={bestScore} />
 
-      <CardsDisplay cards={cards} />
+      <CardsDisplay cards={cards} processCardClicked={processCardClicked} />
     </ChakraProvider>
   );
 }
