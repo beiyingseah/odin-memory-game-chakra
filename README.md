@@ -10,6 +10,10 @@ In this project, I create the same simple memory game as before, but this time, 
 
 https://chakra-ui.com/
 
+##### Color Palette
+
+https://chakra-ui.com/docs/styled-system/theme#spacing
+
 ##### Images & animal names
 
 https://oceana.org/marine-life/ <br/>
