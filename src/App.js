@@ -14,7 +14,6 @@ import {
   Grid,
   theme,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
 
 // Images
 import bluebottle from './assets/images/bluebottle.png';
@@ -52,14 +51,12 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
-      <Flex width="100%" justifyContent="flex-end">
-        <ColorModeSwitcher />
-      </Flex>
+      <Flex width="100%" justifyContent="flex-end"></Flex>
       <Flex flexDir="column" alignItems="center">
-        <Heading as="h1" size="2xl" textTransform="uppercase">
+        <Heading mt={10} as="h1" size="2xl" textTransform="uppercase">
           Marine Memory Game
         </Heading>
-        <Text fontSize="xl" fontStyle="italic" textTransform="uppercase">
+        <Text fontSize="l" fontStyle="italic" textTransform="uppercase">
           - Coral Edition -
         </Text>
       </Flex>
@@ -72,21 +69,7 @@ function App() {
         </Text>
       </Flex>
 
-      <Grid
-        gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))"
-        rowGap={10}
-      >
-        {cards.map(card => {
-          return (
-            <Box
-              key={card.name}
-              border="1px solid white"
-              w="280px"
-              h="200px"
-            ></Box>
-          );
-        })}
-      </Grid>
+      <CardsDisplay cards={cards} />
     </ChakraProvider>
   );
 }
