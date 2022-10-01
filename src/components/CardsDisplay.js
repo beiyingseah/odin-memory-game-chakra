@@ -1,5 +1,6 @@
-import { Grid, Box } from '@chakra-ui/react';
+import { Grid } from '@chakra-ui/react';
 import React from 'react';
+import CardDisplay from './CardDisplay';
 
 const CardsDisplay = props => {
   const { cards } = props;
@@ -12,12 +13,11 @@ const CardsDisplay = props => {
     >
       {cards.map(card => {
         return (
-          <Box
+          <CardDisplay
             key={card.name}
-            border="1px solid white"
-            w="280px"
-            h="200px"
-          ></Box>
+            cardName={card.name}
+            cardImage={card.image}
+          />
         );
       })}
     </Grid>

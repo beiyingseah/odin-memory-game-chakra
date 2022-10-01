@@ -1,8 +1,18 @@
 import React from 'react';
+import { Box, Text } from '@chakra-ui/react';
 
-const CardDisplay = () => {
+const CardDisplay = props => {
+  const { cardName, cardImage } = props;
+
+  // All that goes on in a click
+
   return (
-    <Box key={card.name} border="1px solid white" w="280px" h="200px"></Box>
+    <Box border="1px solid white" w="280px" h="240px">
+      <img src={cardImage} alt={cardName}></img>
+      <Text textTransform="uppercase" textAlign="center" mt={2}>
+        {cardName}
+      </Text>
+    </Box>
   );
 };
 
