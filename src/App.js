@@ -60,14 +60,7 @@ function App() {
           - Coral Edition -
         </Text>
       </Flex>
-      <Flex mb={10} justifyContent="center" columnGap={100} mt={10}>
-        <Text fontSize="xl" textTransform="uppercase">
-          Current Score: 0
-        </Text>
-        <Text fontSize="xl" textTransform="uppercase">
-          Best Score: 10
-        </Text>
-      </Flex>
+      <ScoreDisplay currentScore={currentScore} bestScore={bestScore} />
 
       <CardsDisplay cards={cards} />
     </ChakraProvider>
