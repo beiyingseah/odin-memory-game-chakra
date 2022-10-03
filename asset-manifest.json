@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/odin-memory-game-chakra/static/css/main.4b9310e3.css",
-    "main.js": "/odin-memory-game-chakra/static/js/main.0780f671.js",
+    "main.js": "/odin-memory-game-chakra/static/js/main.38ecf89a.js",
     "static/media/chelsea-market-all-400-normal.woff": "/odin-memory-game-chakra/static/media/chelsea-market-all-400-normal.101c4c28cabfe54c4799.woff",
     "static/media/chelsea-market-latin-400-normal.woff2": "/odin-memory-game-chakra/static/media/chelsea-market-latin-400-normal.1cf39da56698ac87e700.woff2",
     "static/media/sanddollar.png": "/odin-memory-game-chakra/static/media/sanddollar.d6e7d3f9fbc3f91bbd8c.png",
@@ -19,10 +19,10 @@
     "static/media/chelsea-market-latin-ext-400-normal.woff2": "/odin-memory-game-chakra/static/media/chelsea-market-latin-ext-400-normal.d8ededc822063f9eeb41.woff2",
     "index.html": "/odin-memory-game-chakra/index.html",
     "main.4b9310e3.css.map": "/odin-memory-game-chakra/static/css/main.4b9310e3.css.map",
-    "main.0780f671.js.map": "/odin-memory-game-chakra/static/js/main.0780f671.js.map"
+    "main.38ecf89a.js.map": "/odin-memory-game-chakra/static/js/main.38ecf89a.js.map"
   },
   "entrypoints": [
     "static/css/main.4b9310e3.css",
-    "static/js/main.0780f671.js"
+    "static/js/main.38ecf89a.js"
   ]
 }
