@@ -72,10 +72,10 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
-      <Flex width="100%" justifyContent="flex-end">
-        <ColorModeSwitcher />
-      </Flex>
       <Box width="100%">
+        <Flex width="100%" justifyContent="flex-end">
+          <ColorModeSwitcher />
+        </Flex>
         <Flex flexDir="column" alignItems="center">
           <Heading mt={10} as="h1" size="2xl" textTransform="uppercase">
             Marine Memory Game
