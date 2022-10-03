@@ -29,7 +29,7 @@ function App() {
   const [cardsClicked, setCardsClicked] = useState([]);
   const [cards, setCards] = useState([
     { name: 'blue bottle', image: bluebottle },
-    { name: 'blueg laucus', image: blueglaucus },
+    { name: 'blue glaucus', image: blueglaucus },
     { name: 'brain coral', image: braincoral },
     { name: 'flame back', image: flameback },
     { name: 'fried egg jellyfish', image: friedegg },
