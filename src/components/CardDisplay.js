@@ -11,14 +11,26 @@ const CardDisplay = props => {
 
   return (
     <Box
-      borderWidth="1px"
+      borderRadius="15"
+      borderWidth="2px"
       borderStyle="solid"
-      borderColor={useColorModeValue('gray.800', 'gray.200')}
+      borderColor={useColorModeValue('gray.500', 'gray.100')}
       w="280px"
       h="240px"
       onClick={handleClick}
+      _hover={{
+        cursor: 'pointer',
+        boxShadow: 'rgba(0, 0, 0, 0.8) 0px 5px 15px',
+        borderWidth: '3px',
+      }}
+      fontWeight="medium"
     >
-      <Image src={cardImage} alt={cardName} />
+      <Image
+        src={cardImage}
+        alt={cardName}
+        borderRadius="13"
+        borderBottomRadius={0}
+      />
       <Text textTransform="uppercase" textAlign="center" mt={2}>
         {cardName}
       </Text>

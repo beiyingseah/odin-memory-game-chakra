@@ -4,16 +4,9 @@ import CardsDisplay from './components/CardsDisplay';
 import ScoreDisplay from './components/ScoreDisplay';
 
 // Chakra UI components
-import {
-  ChakraProvider,
-  Box,
-  Flex,
-  Heading,
-  Text,
-  useColorModeValue,
-  theme,
-} from '@chakra-ui/react';
+import { ChakraProvider, Box, Flex, Heading, Text } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
+import theme from './theme/customFont';
 
 // Images
 import bluebottle from './assets/images/bluebottle.png';
