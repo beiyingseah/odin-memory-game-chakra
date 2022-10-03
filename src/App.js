@@ -1,11 +1,19 @@
 // My components and React's
 import { useState } from 'react';
 import CardsDisplay from './components/CardsDisplay';
-import CardDisplay from './components/CardDisplay';
 import ScoreDisplay from './components/ScoreDisplay';
 
 // Chakra UI components
-import { ChakraProvider, Flex, Heading, Text, theme } from '@chakra-ui/react';
+import {
+  ChakraProvider,
+  Box,
+  Flex,
+  Heading,
+  Text,
+  useColorModeValue,
+  theme,
+} from '@chakra-ui/react';
+import { ColorModeSwitcher } from './ColorModeSwitcher';
 
 // Images
 import bluebottle from './assets/images/bluebottle.png';
@@ -32,7 +40,7 @@ function App() {
     { name: 'braincoral', image: braincoral },
     { name: 'flameback', image: flameback },
     { name: 'friedegg', image: friedegg },
-    { name: 'giaREntclam', image: giantclam },
+    { name: 'giantclam', image: giantclam },
     { name: 'lopheliacoral', image: lopheliacoral },
     { name: 'moonjelly', image: moonjelly },
     { name: 'pyrosome', image: pyrosome },
@@ -46,34 +54,39 @@ function App() {
   };
 
   const processCardClicked = cardName => {
+    console.log(cardsClicked);
     if (cardsClicked.includes(cardName)) {
       if (currentScore > bestScore) {
         setBestScore(currentScore);
       }
       setCurrentScore(0);
       shuffleCards();
-      setCardsClicked(cardsClicked.concat(cardName));
+      setCardsClicked([]);
     } else {
-      setCardsClicked();
+      setCardsClicked(cardsClicked.concat(cardName));
       setCurrentScore(currentScore + 1);
       shuffleCards();
     }
+    console.log(cardsClicked);
   };
 
   return (
     <ChakraProvider theme={theme}>
-      <Flex width="100%" justifyContent="flex-end"></Flex>
-      <Flex flexDir="column" alignItems="center">
-        <Heading mt={10} as="h1" size="2xl" textTransform="uppercase">
-          Marine Memory Game
-        </Heading>
-        <Text fontSize="l" fontStyle="italic" textTransform="uppercase">
-          - Coral Edition -
-        </Text>
+      <Flex width="100%" justifyContent="flex-end">
+        <ColorModeSwitcher />
       </Flex>
-      <ScoreDisplay currentScore={currentScore} bestScore={bestScore} />
-
-      <CardsDisplay cards={cards} processCardClicked={processCardClicked} />
+      <Box width="100%">
+        <Flex flexDir="column" alignItems="center">
+          <Heading mt={10} as="h1" size="2xl" textTransform="uppercase">
+            Marine Memory Game
+          </Heading>
+          <Text fontSize="lg" fontStyle="italic" textTransform="uppercase">
+            - Coral Edition -
+          </Text>
+        </Flex>
+        <ScoreDisplay currentScore={currentScore} bestScore={bestScore} />
+        <CardsDisplay cards={cards} processCardClicked={processCardClicked} />
+      </Box>
     </ChakraProvider>
   );
 }
