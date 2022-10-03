@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/odin-memory-game-chakra/static/css/main.4b9310e3.css",
+    "main.js": "/odin-memory-game-chakra/static/js/main.0780f671.js",
+    "static/media/chelsea-market-all-400-normal.woff": "/odin-memory-game-chakra/static/media/chelsea-market-all-400-normal.101c4c28cabfe54c4799.woff",
+    "static/media/chelsea-market-latin-400-normal.woff2": "/odin-memory-game-chakra/static/media/chelsea-market-latin-400-normal.1cf39da56698ac87e700.woff2",
+    "static/media/sanddollar.png": "/odin-memory-game-chakra/static/media/sanddollar.d6e7d3f9fbc3f91bbd8c.png",
+    "static/media/giantclam.png": "/odin-memory-game-chakra/static/media/giantclam.22f8287df6717d373804.png",
+    "static/media/lopheliacoral.png": "/odin-memory-game-chakra/static/media/lopheliacoral.af4dd81a673ea355a919.png",
+    "static/media/bluebottle.png": "/odin-memory-game-chakra/static/media/bluebottle.0b4dacf05262431a4107.png",
+    "static/media/braincoral.png": "/odin-memory-game-chakra/static/media/braincoral.edbcb481f2c6659f9573.png",
+    "static/media/blueglaucus.png": "/odin-memory-game-chakra/static/media/blueglaucus.fb8ee5b2a844410605ce.png",
+    "static/media/seacucumber.png": "/odin-memory-game-chakra/static/media/seacucumber.3b5ab9464bfee0779d28.png",
+    "static/media/moonjelly.png": "/odin-memory-game-chakra/static/media/moonjelly.ac85b0c00cbaf421f71a.png",
+    "static/media/friedegg.png": "/odin-memory-game-chakra/static/media/friedegg.5a48a1ef407e60b363fd.png",
+    "static/media/flameback.jpeg": "/odin-memory-game-chakra/static/media/flameback.918f0f8bf14af5bc08f1.jpeg",
+    "static/media/pyrosome.png": "/odin-memory-game-chakra/static/media/pyrosome.5cb15f04f3e7524563b2.png",
+    "static/media/seawasp.jpeg": "/odin-memory-game-chakra/static/media/seawasp.122acfaae3f97678192e.jpeg",
+    "static/media/chelsea-market-latin-ext-400-normal.woff2": "/odin-memory-game-chakra/static/media/chelsea-market-latin-ext-400-normal.d8ededc822063f9eeb41.woff2",
+    "index.html": "/odin-memory-game-chakra/index.html",
+    "main.4b9310e3.css.map": "/odin-memory-game-chakra/static/css/main.4b9310e3.css.map",
+    "main.0780f671.js.map": "/odin-memory-game-chakra/static/js/main.0780f671.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b9310e3.css",
+    "static/js/main.0780f671.js"
+  ]
+}
