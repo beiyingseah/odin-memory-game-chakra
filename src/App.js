@@ -28,18 +28,18 @@ function App() {
   const [bestScore, setBestScore] = useState(0);
   const [cardsClicked, setCardsClicked] = useState([]);
   const [cards, setCards] = useState([
-    { name: 'bluebottle', image: bluebottle },
-    { name: 'blueglaucus', image: blueglaucus },
-    { name: 'braincoral', image: braincoral },
-    { name: 'flameback', image: flameback },
-    { name: 'friedegg', image: friedegg },
-    { name: 'giantclam', image: giantclam },
-    { name: 'lopheliacoral', image: lopheliacoral },
-    { name: 'moonjelly', image: moonjelly },
+    { name: 'blue bottle', image: bluebottle },
+    { name: 'blueg laucus', image: blueglaucus },
+    { name: 'brain coral', image: braincoral },
+    { name: 'flame back', image: flameback },
+    { name: 'fried egg jellyfish', image: friedegg },
+    { name: 'giant clam', image: giantclam },
+    { name: 'lophelia coral', image: lopheliacoral },
+    { name: 'moon jelly', image: moonjelly },
     { name: 'pyrosome', image: pyrosome },
-    { name: 'sanddollar', image: sanddollar },
-    { name: 'seacucumber', image: seacucumber },
-    { name: 'seawasp', image: seawasp },
+    { name: 'sand dollar', image: sanddollar },
+    { name: 'sea cucumber', image: seacucumber },
+    { name: 'sea wasp', image: seawasp },
   ]);
 
   const shuffleCards = () => {
