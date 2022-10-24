@@ -27,3 +27,6 @@ https://chakra-ui.com/docs/styled-system/theme#spacing
 ##### Images & animal names
 
 https://oceana.org/marine-life/
+
+#### Icons
+https://www.flaticon.com/free-icons/cards
